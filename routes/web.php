@@ -22,8 +22,6 @@ Route::get('/about', [PagesController::class,'about'])->name('about');
 
 
 
-
-
 // Authentication route
 Auth::routes();
 
