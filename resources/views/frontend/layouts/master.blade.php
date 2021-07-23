@@ -8,7 +8,7 @@
     <title>Easy-Travel</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container-fluid">
     @include('frontend.partials.nav')
     @yield('content')
     @include('frontend.partials.footer')

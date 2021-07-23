@@ -19,3 +19,12 @@ Route::get('/', [PagesController::class,'index'])->name('index');
 Route::get('/event', [PagesController::class,'event'])->name('event');
 Route::get('/about', [PagesController::class,'about'])->name('about');
 
+
+
+
+
+
+// Authentication route
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
