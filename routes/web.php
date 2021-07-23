@@ -14,13 +14,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Frontend route
 Route::get('/', [PagesController::class,'index'])->name('index');
+Route::get('/event', [PagesController::class,'event'])->name('event');
+Route::get('/about', [PagesController::class,'about'])->name('about');
 
-Route::get('/about', function () {
-    return view('frontend.pages.about');
-})->name('about');
-
-Route::get('/event', function () {
-    return view('frontend.pages.event');
-})->name('event');
