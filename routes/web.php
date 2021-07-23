@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend.pages.index');
-});
+})->name('index');
+
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+})->name('about');
+
+Route::get('/event', function () {
+    return view('frontend.pages.event');
+})->name('event');
